@@ -46,12 +46,7 @@
 
 
   /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  // * {
-  //   scrollbar-width: auto;
-  //   scrollbar-color: #e0ddff #ffffff;
-  // }
-
+ 
   /* Chrome, Edge, and Safari */
   *::-webkit-scrollbar {
     width: 6px;
@@ -339,11 +334,6 @@
     }
   }
 
-  // &.open-contacts {
-  //   @media (min-width:1200px) and (max-width:1920px) {
-  //     display: none;
-  //   }
-  // }
 }
 
 
@@ -773,9 +763,6 @@
     }
 
     .chat-icon {
-      // display: flex;
-      // flex-direction: column;
-      // gap: 10px;
       position: absolute;
       left: 0 !important;
       bottom: 30px !important;
@@ -929,12 +916,6 @@
     background-color: var(--chart-text-color);
   }
 
-  // .fg-picker-special-buttons {
-  //   .fg-emoji-picker-close-button {
-  //     background-color: var(--text-gray);
-  //   }
-
-  // }
 
   #fg-emoji-picker-move {
     display: none;
@@ -975,7 +956,6 @@
 .second-btn {
   z-index: 0;
   position: relative;
-  // padding: 0 14px;
   background: transparent;
 
   &::before {

@@ -593,11 +593,6 @@ export const VisitorChartData: ApexOptions = {
     labels: {
       colors: "var(--chart-text-color)",
     },
-    // markers: {
-    //   width: 6,
-    //   height: 6,
-    //   radius: 12,
-    // },
     itemMargin: {
       horizontal: 10,
     },
@@ -676,7 +671,6 @@ export const FacebookOption: ApexOptions = {
         margin: 5,
       },
       dataLabels: {
-        //   showOn: "always",
         value: {
           color: "var(--body-font-color)",
           fontSize: "14px",
@@ -727,7 +721,6 @@ export const TwitterOption: ApexOptions = {
         margin: 5,
       },
       dataLabels: {
-        //   showOn: "always",
         value: {
           color: "var(--body-font-color)",
           fontSize: "14px",

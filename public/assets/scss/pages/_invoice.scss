@@ -35,26 +35,6 @@
         margin-bottom: -4px;
         display: block;
     }
-
-    .order-details th:first-child,
-    .order-details td:first-child {
-        // min-width: 490px;
-    }
-
-    .order-details th:nth-child(2),
-    .order-details td:nth-child(2) {
-        // width: 20%;
-    }
-
-    @media (max-width: 1199px) {
-        .table-wrapper {
-            // width: 930px;
-        }
-
-        .address {
-            // width: 21% !important;
-        }
-    }
 }
 
 .invoice-2 {

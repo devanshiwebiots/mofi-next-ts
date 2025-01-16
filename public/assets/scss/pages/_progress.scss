@@ -138,7 +138,6 @@ $colors: (
 	dark: $dark-color
 );
 
-//btn color
 @each $key,
 $val in $colors {
 	.progress-striped-#{$key} {

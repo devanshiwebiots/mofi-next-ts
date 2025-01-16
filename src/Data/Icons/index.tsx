@@ -1,5 +1,3 @@
-// import { Abstract, Animal, ArrowsDirection, Brand, BrandPlayer, Business, Charts, Construction, Control, Currency, Device, Directional, Education, Emoticon, FileType, Food, FormControl, KidsToys, Law, Mathematical, Medical, MobileUI, Multimedia, Payment, Person, Search, Social, Spinner, Sport, TextEditor, Transport, Travel, VideoPlayer, Weather, WebApp, WebApplication } from "../../Constant";
-
 export const FlagIconData = [
   { abbrivation: "in", name: "India Flag" },
   { abbrivation: "ad", name: "Andorra Flag" },

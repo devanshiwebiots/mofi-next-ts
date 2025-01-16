@@ -664,7 +664,6 @@ export const SalesChartData: ApexOptions = {
           fillColor: primary,
           strokeColor: "#ffffff",
           strokeWidth: 4,
-          // radius: 5,
         },
         label: {
           borderWidth: 1,

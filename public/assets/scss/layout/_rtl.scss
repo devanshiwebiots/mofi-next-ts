@@ -4159,30 +4159,7 @@ html[dir="rtl"] {
     padding-left: unset;
     float: right;
   }
-
-  // .list-group-horizontal-sm>.list-group-item+.list-group-item {
-  //   border-left-width: 1px;
-  //   border-right-width: 0px;
-  // }
-
-  // .list-group-horizontal-sm>.list-group-item:last-child:not(:first-child) {
-  //   border-top-left-radius: var(--bs-list-group-border-radius);
-  //   border-bottom-left-radius: var(--bs-list-group-border-radius);
-  //   border-top-right-radius: 0px;
-  //   border-bottom-right-radius: 0px;
-  // }
-
-  // .list-group-horizontal-sm>.list-group-item:first-child:not(:last-child) {
-  //   border-top-right-radius: var(--bs-list-group-border-radius);
-  //   border-bottom-right-radius: var(--bs-list-group-border-radius);
-  //   border-top-left-radius: 0px;
-  //   border-bottom-left-radius: 0px;
-  // }
-  // .list-group-horizontal-md > .list-group-item:last-child:not(:first-child) {
-  //   border-top-right-radius: var(--bs-list-group-border-radius);
-  //   border-bottom-left-radius: 0;
-  // }
-
+  
   // chart widget page
   .chart-widget-top {
     .text-end {

@@ -238,7 +238,7 @@ export const MenuList: MenuItem[] | undefined = [
           { path: "/bonus_ui/dropzone", title: "Dropzone", type: "link" },
           { path: "/bonus_ui/tour", title: "Tour", type: "link" },
           { path: "/bonus_ui/sweetalert_2", title: "SweetAlert2", type: "link" },
-          { path: "/bonus_ui/reactstrap_carousel", title: "Reactstrap Carousel", type: "link" },
+          { path: "/bonus_ui/carousel", title: "Carousel", type: "link" },
           { path: "/bonus_ui/ribbons", title: "Ribbons", type: "link" },
           { path: "/bonus_ui/pagination", title: "Pagination", type: "link" },
           { path: "/bonus_ui/breadcrumb", title: "Breadcrumb", type: "link" },

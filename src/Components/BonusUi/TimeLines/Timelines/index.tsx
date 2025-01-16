@@ -1,58 +1,33 @@
-import { timelineData } from "@/Data/BonusUi/Timeline";
-import { Timeline, TimelineConnector, TimelineContent, TimelineDot, TimelineItem, TimelineSeparator } from "@mui/lab";
-import { Card, CardContent, Grid, Slide } from "@mui/material";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
+import { Card, CardBody, CardHeader, Col } from "reactstrap";
+import AppIdeasTimeline from "./AppIdeasTimeline";
+import AutoTestingTimeline from "./AutoTestingTimeline";
+import BlogTimeline from "./BlogTimeline";
+import CarouselTimeline from "./CarouselTimeline";
+import MeetUpTimeline from "./MeetUpTimeline";
+import ResolutionTimeline from "./ResolutionTimeline";
 
 const Timelines: React.FC = () => {
-  const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
-  const timelineItemsRef = useRef<(HTMLDivElement | null)[]>([]);
-
-  const handleIntersection = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        setIsVisible((prev) => ({ ...prev, [entry.target.id]: true }));
-        observer.unobserve(entry.target);
-      }
-    });
-  };
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(handleIntersection, {
-      threshold: 0.5, // Trigger when 50% of the item is in view
-    });
-
-    timelineItemsRef.current.forEach((item) => item && observer.observe(item));
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
- 
-
   return (
-    <Grid item xs={12}>
+    <Col sm={12} className="box-col-12">
       <Card>
-        <CardContent>
-          <Timeline position='alternate'>
-            {timelineData.map((item, index) => (
-              <TimelineItem ref={(el: any) => (timelineItemsRef.current[index] = el)} id={item.id} key={item.id}>
-                <TimelineSeparator>
-                  <TimelineDot color={item.color} sx={{ width: 50, height: 50, fontSize: "1.5rem", padding: "10px" }}>
-                    {item.icon}
-                  </TimelineDot>
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Slide direction={item.direction} in={isVisible[item.id]} timeout={500}>
-                    <div>{item.component}</div>
-                  </Slide>
-                </TimelineContent>
-              </TimelineItem>
-            ))}
-          </Timeline>
-        </CardContent>
+        <CardHeader>
+          <h4>Timeline</h4>
+          <p className="f-m-light mt-1">
+            This is a Mofi timeline chart.</p>
+        </CardHeader>
+        <CardBody>
+          <section className="cd-container" id="cd-timeline">
+            <AppIdeasTimeline />
+            <BlogTimeline />
+            <CarouselTimeline />
+            <AutoTestingTimeline />
+            <MeetUpTimeline />
+            <ResolutionTimeline />
+          </section>
+        </CardBody>
       </Card>
-    </Grid>
+    </Col>
   );
 };
 

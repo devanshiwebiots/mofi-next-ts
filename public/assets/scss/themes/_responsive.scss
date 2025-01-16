@@ -60,7 +60,6 @@
         }
 
         >div {
-          //height: 545px;
           z-index: 2;
           background-color: rgba(255, 255, 255, 0.75);
           background-blend-mode: overlay;
@@ -972,7 +971,6 @@
 
       .receiver-img {
         margin-top: 30px;
-        //margin-bottom: 30px;
       }
 
       .call-icons {
@@ -2207,7 +2205,6 @@
           .header-logo-wrapper {
             display: flex;
             align-items: center;
-            // justify-content: center;
           }
 
           .toggle-sidebar {
@@ -6381,14 +6378,12 @@
       .header-wrapper {
         .nav-right {
           .onhover-show-div {
-            // width: calc(100vw - 242px);
             position: fixed;
             top: 60px;
             right: 12px;
           }
 
           .notification-dropdown {
-            // width: calc(100vw - 242px);
             position: fixed;
             top: 60px;
             right: 15px !important;

@@ -9,7 +9,7 @@ import IndividualInterval from "./IndividualInterval";
 import DisableTouchSwiping from "./DisableTouchSwiping";
 import DarkVariant from "./DarkVariant";
 
-const ReactstrapCarouselContainer = () => {
+const CarouselContainer = () => {
   return (
     <Container fluid>
       <Row>
@@ -27,4 +27,4 @@ const ReactstrapCarouselContainer = () => {
   );
 };
 
-export default ReactstrapCarouselContainer;
+export default CarouselContainer;

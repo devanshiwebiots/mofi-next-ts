@@ -8239,9 +8239,6 @@ body {
 		// dropdown dark mode
 		.dark-input-type {
 			.input-group {
-
-				// background-color: $dark-card-background;
-				// color: $dark-all-font-color;
 				.input-group-text {
 					background: transparent;
 					border: unset;
@@ -9301,7 +9298,6 @@ body {
 	&[class*='dark-'] {
 		.for-dark {
 			display: block;
-			// margin: 0 auto;
 		}
 
 		.for-light {
