@@ -29,6 +29,7 @@
                 }
 
                 .student-arrow {
+                    color: $light-text-color;
                     @media (max-width: 1656px) and (min-width: 1199px) {
                         display: none !important;
                     }
@@ -42,7 +43,6 @@
                         width: 88px;
                     }
 
-                    color: $light-text-color;
 
                     .up-arrow {
                         height: 18px;
@@ -553,6 +553,7 @@
                 }
 
                 h5 {
+                    font-size: 18px;
                     @media (max-width: 1552px) and (min-width: 1400px) {
                         display: block;
                         width: 80%;
@@ -562,7 +563,6 @@
                         font-size: 14px !important;
                     }
 
-                    font-size: 18px;
 
                     span {
                         color: $light-text-color;
@@ -783,6 +783,10 @@
             thead {
                 tr {
                     th {
+
+                        padding-bottom: 8px;
+                        color: $light-text-color;
+                        border-bottom: 1px solid $light-gray;
                         .form-check {
                             input {
                                 height: 15px;
@@ -803,10 +807,6 @@
                                 display: none;
                             }
                         }
-
-                        padding-bottom: 8px;
-                        color: $light-text-color;
-                        border-bottom: 1px solid $light-gray;
 
                         &:first-child,
                         &:last-child {

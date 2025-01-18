@@ -7,16 +7,16 @@
   }
 
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: var(--theme-default);
-    .horizontal-wizard{
-      .horizontal-wizard-content{
-        h6{
+    .horizontal-wizard {
+      .horizontal-wizard-content {
+        h6 {
           color: $white;
         }
       }
       .business-wizard {
-        h6{
+        h6 {
           background-color: var(--theme-default);
         }
       }
@@ -24,7 +24,7 @@
   }
 }
 .business-wizard {
-  h6{
+  h6 {
     height: 30px;
     width: 130px;
     display: flex;
@@ -44,39 +44,24 @@
   justify-content: flex-end;
 }
 
-$nav-name: theme,
-  primary,
-  secondary,
-  success,
-  danger,
-  info,
-  tertiary,
-  light,
-  dark,
-  warning;
-$nav-color: var(--theme-default),
-  var(--theme-default),
-  $secondary-color,
-  $success-color,
-  $danger-color,
-  $tertiary-color,
-  $info-color,
-  $light-color,
-  $dark-color,
-  $warning-color;
+$nav-name: theme, primary, secondary, success, danger, info, tertiary, light,
+  dark, warning;
+$nav-color: var(--theme-default), var(--theme-default), $secondary-color,
+  $success-color, $danger-color, $tertiary-color, $info-color, $light-color,
+  $dark-color, $warning-color;
 
 @each $var in $nav-name {
-  $i: index($label-name, $var);
+  $i: list.index($label-name, $var);
 
   .nav-#{$var},
   .nav-pills.nav-#{$var} {
     .nav-link {
-      color: nth($nav-color, $i);
+      color: list.nth($nav-color, $i);
     }
 
     .nav-link.active,
-    .show>.nav-link {
-      background-color: nth($nav-color, $i);
+    .show > .nav-link {
+      background-color: list.nth($nav-color, $i);
       color: $white;
     }
   }
@@ -84,7 +69,6 @@ $nav-color: var(--theme-default),
 
 .nav-tabs.nav-bottom {
   .nav-item {
-
     .nav-link.active,
     .nav-link.focus,
     .nav-link.hover {
@@ -94,7 +78,7 @@ $nav-color: var(--theme-default),
 }
 
 .tab-content {
-  ~.nav-tabs {
+  ~ .nav-tabs {
     &.border-tab {
       margin-bottom: 0;
       margin-top: 30px;
@@ -145,7 +129,7 @@ $nav-color: var(--theme-default),
   }
 
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: transparent;
     border-left-color: var(--theme-default);
     color: var(--theme-default);
@@ -163,7 +147,7 @@ $nav-color: var(--theme-default),
   }
 
   .nav-link.active,
-  .show>.nav-link {
+  .show > .nav-link {
     background-color: transparent;
     border-right-color: var(--theme-default);
     color: var(--theme-default);
@@ -172,37 +156,21 @@ $nav-color: var(--theme-default),
   }
 }
 
-$m-nav-name: theme,
-  primary,
-  secondary,
-  success,
-  danger,
-  info,
-  tertiary,
-  light,
-  dark,
-  warning;
-$nav-color: var(--theme-default),
-  var(--theme-default),
-  $secondary-color,
-  $success-color,
-  $danger-color,
-  $tertiary-color,
-  $info-color,
-  $light-color,
-  $dark-color,
-  $warning-color;
+$m-nav-name: theme, primary, secondary, success, danger, info, tertiary, light,
+  dark, warning;
+$nav-color: var(--theme-default), var(--theme-default), $secondary-color,
+  $success-color, $danger-color, $tertiary-color, $info-color, $light-color,
+  $dark-color, $warning-color;
 
 @each $var in $m-nav-name {
-  $i: index($label-name, $var);
+  $i: list.index($label-name, $var);
 
   .border-tab.nav-#{$var} {
-
     .nav-link.active,
     .nav-item.show,
     .nav-link:focus,
     .nav-link:hover {
-      color: nth($nav-color, $i);
+      color: list.nth($nav-color, $i);
       background-color: transparent;
     }
 
@@ -214,34 +182,32 @@ $nav-color: var(--theme-default),
         &.active,
         &.show,
         &:focus {
-          border-bottom: 2px solid nth($nav-color, $i);
+          border-bottom: 2px solid list.nth($nav-color, $i);
         }
 
         &.active,
         &.show,
         &:focus,
         &:hover {
-          color: nth($nav-color, $i);
+          color: list.nth($nav-color, $i);
         }
       }
     }
   }
 
   .border-tab.nav-left.nav-#{$var} {
-
     .nav-link.active,
-    .show>.nav-link {
-      border-left-color: nth($nav-color, $i);
-      color: nth($nav-color, $i);
+    .show > .nav-link {
+      border-left-color: list.nth($nav-color, $i);
+      color: list.nth($nav-color, $i);
     }
   }
 
   .border-tab.nav-right.nav-#{$var} {
-
     .nav-link.active,
-    .show>.nav-link {
-      border-right-color: nth($nav-color, $i);
-      color: nth($nav-color, $i);
+    .show > .nav-link {
+      border-right-color: list.nth($nav-color, $i);
+      color: list.nth($nav-color, $i);
     }
   }
 }
@@ -273,10 +239,9 @@ $nav-color: var(--theme-default),
   display: flex;
   gap: 16px;
 
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     justify-content: center;
   }
-
 }
 
 .tab-img {
@@ -291,17 +256,15 @@ $nav-color: var(--theme-default),
     border-top-right-radius: 4px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-
   }
 }
 
 .simple-wrapper {
   .dropdown-collection {
     .dropdown-item {
-
       &:hover,
       &:active {
-        background-color: $gray-60  !important;
+        background-color: $gray-60 !important;
       }
     }
   }
@@ -320,7 +283,7 @@ $nav-color: var(--theme-default),
   flex-wrap: wrap;
   gap: 20px;
 
-  @media (max-width:1400px) {
+  @media (max-width: 1400px) {
     gap: calc(14px + (35 - 14) * ((100vw - 320px) / (1400 - 320)));
   }
 
@@ -331,7 +294,6 @@ $nav-color: var(--theme-default),
       display: flex;
       align-items: center;
       gap: 12px;
-
 
       .designer-img {
         height: 50px;
@@ -407,7 +369,7 @@ $nav-color: var(--theme-default),
       border-bottom: 1px dashed var(--light-border);
       align-items: center;
 
-      @media (max-width:630px) {
+      @media (max-width: 630px) {
         align-items: unset;
       }
     }
@@ -418,41 +380,27 @@ $nav-color: var(--theme-default),
   font-size: 14px;
 }
 
-$tabs-name: primary,
-  secondary,
-  success,
-  danger,
-  tertiary,
-  warning,
-  info,
-  light,
+$tabs-name: primary, secondary, success, danger, tertiary, warning, info, light,
   dark;
 
-$tab-color : $primary-color,
-$secondary-color,
-$success-color,
-$danger-color,
-$warning-color,
-$tertiary-color,
-$info-color,
-$light-color,
-$dark-color;
+$tab-color: $primary-color, $secondary-color, $success-color, $danger-color,
+  $warning-color, $tertiary-color, $info-color, $light-color, $dark-color;
 
 @each $var in $tabs-name {
-  $i: index($tabs-name, $var);
+  $i: list.index($tabs-name, $var);
 
   #bottom-tab {
     .nav-border {
       &.tab-#{$var} {
         &:hover {
-          color: nth($tab-color, $i);
+          color: list.nth($tab-color, $i);
         }
 
         &:focus,
         &:active,
         &.active {
-          color: nth($tab-color, $i);
-          border-bottom: 2px solid nth($tab-color, $i);
+          color: list.nth($tab-color, $i);
+          border-bottom: 2px solid list.nth($tab-color, $i);
         }
       }
     }
@@ -466,7 +414,7 @@ $dark-color;
     font-weight: 600;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       display: inline-block;
@@ -496,7 +444,6 @@ $dark-color;
     &.nav-secondary {
       &.nav-left {
         .nav-link {
-
           &:hover,
           &.active {
             background-color: unset;
@@ -525,7 +472,7 @@ $dark-color;
   display: flex;
   gap: 12px;
 
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     flex-direction: column;
     align-items: center;
   }

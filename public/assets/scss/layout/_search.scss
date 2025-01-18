@@ -112,7 +112,7 @@
       color: #586082;
 
       +li {
-        border-left: 1px dashed lighten($dark-color, 50%);
+        border-left: 1px dashed color.adjust($dark-color, $lightness: 50%);
         padding-left: 8px;
         margin-left: 8px;
       }

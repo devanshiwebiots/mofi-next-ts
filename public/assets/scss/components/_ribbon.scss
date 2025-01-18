@@ -64,7 +64,7 @@
     display: block;
     width: 0;
     height: 0;
-    content: '';
+    content: "";
     border: 15px dashed $dark-color;
     border-right: 10px dashed transparent;
   }
@@ -164,7 +164,6 @@
 }
 
 .ribbon-bookmark {
-
   &.ribbon-vertical-left:before,
   &.ribbon-vertical-right:before {
     top: 100%;
@@ -175,15 +174,11 @@
   }
 }
 
-@each $ribbon-name,
-$ribbon-color in (primary, $primary-color),
-(secondary, $secondary-color),
-(success, $success-color),
-(danger, $danger-color),
-(info, $info-color),
-(light, $light-color),
-(dark, $dark-color),
-(warning, $warning-color) {
+@each $ribbon-name, $ribbon-color in (primary, $primary-color),
+  (secondary, $secondary-color), (success, $success-color),
+  (danger, $danger-color), (info, $info-color), (light, $light-color),
+  (dark, $dark-color), (warning, $warning-color)
+{
   .ribbon-#{$ribbon-name} {
     background: $ribbon-color;
   }
@@ -230,33 +225,33 @@ $ribbon-color in (primary, $primary-color),
   .ribbon-#{$ribbon-name}.ribbon-clip {
     &:before {
       border-color: transparent;
-      border-top-color: darken($ribbon-color, 10%);
-      border-right-color: darken($ribbon-color, 10%);
+      border-top-color: color.adjust($ribbon-color, $lightness: -10%);
+      border-right-color: color.adjust($ribbon-color, $lightness: -10%);
     }
   }
 
   .ribbon-#{$ribbon-name}.ribbon-clip-right {
     &:before {
       border-right-color: transparent;
-      border-top-color: darken($ribbon-color, 10%);
-      border-left-color: darken($ribbon-color, 10%);
+      border-top-color: color.adjust($ribbon-color, $lightness: -10%);
+      border-left-color: color.adjust($ribbon-color, $lightness: -10%);
     }
   }
 
   .ribbon-#{$ribbon-name}.ribbon-clip-bottom {
     &:before {
       border-top-color: transparent;
-      border-bottom-color: darken($ribbon-color, 10%);
-      border-right-color: darken($ribbon-color, 10%);
+      border-bottom-color: color.adjust($ribbon-color, $lightness: -10%);
+      border-right-color: color.adjust($ribbon-color, $lightness: -10%);
     }
   }
 
   .ribbon-#{$ribbon-name}.ribbon-clip-bottom-right {
     &:before {
       border-top-color: transparent;
-      border-bottom-color: darken($ribbon-color, 10%);
+      border-bottom-color: color.adjust($ribbon-color, $lightness: -10%);
       border-right-color: transparent;
-      border-left-color: darken($ribbon-color, 10%);
+      border-left-color: color.adjust($ribbon-color, $lightness: -10%);
     }
   }
 }

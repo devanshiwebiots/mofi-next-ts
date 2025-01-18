@@ -84,7 +84,7 @@
 	border: 1px dashed $light-semi-gray;
 	border-radius: 5px;
 	padding: 30px;
-	background-color: lighten($light, 2%);
+	background-color: color.adjust($light, $lightness: 2%);
 	margin-bottom: 30px;
 
 	h6 {

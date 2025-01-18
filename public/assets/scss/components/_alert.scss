@@ -22,13 +22,13 @@
     margin-top: $alert-padding;
   }
 
-  [data-notify='icon'] {
+  [data-notify="icon"] {
     margin-right: 10px;
     line-height: 20px;
     position: absolute;
   }
 
-  [data-notify='message'] {
+  [data-notify="message"] {
     display: inline-block;
     width: 100%;
   }
@@ -99,7 +99,7 @@
       position: absolute;
       top: 18px;
 
-      &~p {
+      & ~ p {
         padding-left: 20px;
       }
     }
@@ -109,47 +109,39 @@
 strong {
   display: inline-block;
 
-  &~p {
+  & ~ p {
     display: inline-block;
   }
 }
 
-$alert-name: primary,
-  secondary,
-  tertiary,
-  success,
-  danger,
-  warning,
-  info,
-  light,
+$alert-name: primary, secondary, tertiary, success, danger, warning, info, light,
   dark;
 
-$alert-color : $primary-color,
-$secondary-color,
-$tertiary-color,
-$success-color,
-$danger-color,
-$warning-color,
-$info-color,
-$light-color,
-$dark-color;
+$alert-color: $primary-color, $secondary-color, $tertiary-color, $success-color,
+  $danger-color, $warning-color, $info-color, $light-color, $dark-color;
 
 @each $var in $alert-name {
-  $i: index($alert-name, $var);
+  $i: list.index($alert-name, $var);
 
   .alert-#{$var} {
-    background-color: rgba(nth($alert-color, $i), 1);
-    border-color: rgba(nth($alert-color, $i), 0.9);
+    background-color: rgba(list.nth($alert-color, $i), 1);
+    border-color: rgba(list.nth($alert-color, $i), 0.9);
     color: $white;
 
     .progress {
       height: 5px;
-      background-color: darken(nth($alert-color, $i), 1%);
+      background-color: color.adjust(
+        list.nth($alert-color, $i),
+        $lightness: -1%
+      );
       border-radius: 0;
     }
 
     .progress-bar {
-      background-color: lighten(nth($alert-color, $i), 50%);
+      background-color: color.adjust(
+        list.nth($alert-color, $i),
+        $lightness: 50%
+      );
     }
 
     .btn-close {
@@ -157,14 +149,14 @@ $dark-color;
     }
 
     .alert-link {
-      color: nth($alert-color, $i);
+      color: list.nth($alert-color, $i);
 
-      @if($var =="light") {
+      @if ($var == "light") {
         color: $dark-color;
       }
     }
 
-    @if($var =="light") {
+    @if ($var == "light") {
       color: $dark-color;
       background-color: $light-color;
 
@@ -174,13 +166,12 @@ $dark-color;
     }
 
     hr {
-      border-top-color: nth($alert-color, $i);
+      border-top-color: list.nth($alert-color, $i);
     }
-
   }
 
   .border-#{$var} {
-    border-color: nth($alert-color, $i) !important;
+    border-color: list.nth($alert-color, $i) !important;
   }
 
   // dashboard-7
@@ -189,32 +180,32 @@ $dark-color;
       li {
         .income-dot {
           &.dot-#{$var} {
-            background-color: nth($alert-color, $i);
+            background-color: list.nth($alert-color, $i);
           }
         }
       }
     }
   }
 
-  // touchspin 
+  // touchspin
   .touchspin-wrapper {
     .btn-touchspin {
       &.touchspin-#{$var} {
-        background-color: nth($alert-color, $i);
-        border: 1px dashed nth($alert-color, $i);
+        background-color: list.nth($alert-color, $i);
+        border: 1px dashed list.nth($alert-color, $i);
         color: $white;
       }
 
       &.spin-border-#{$var} {
         background-color: unset;
-        border: 1px dashed nth($alert-color, $i);
-        color: nth($alert-color, $i);
+        border: 1px dashed list.nth($alert-color, $i);
+        color: list.nth($alert-color, $i);
       }
     }
 
-    input[type='number'] {
+    input[type="number"] {
       &.spin-outline-#{$var} {
-        outline: 1px dashed nth($alert-color, $i);
+        outline: 1px dashed list.nth($alert-color, $i);
         border: none;
         border-radius: 3px;
       }
@@ -222,11 +213,10 @@ $dark-color;
   }
 
   .pre-post-touchspin {
-
     .btn-touchspin {
       &.touchspin-#{$var} {
-        background-color: nth($alert-color, $i);
-        border: 1px dashed nth($alert-color, $i);
+        background-color: list.nth($alert-color, $i);
+        border: 1px dashed list.nth($alert-color, $i);
         color: $white;
       }
     }
@@ -238,28 +228,26 @@ $dark-color;
     .form-check-input {
       &.switch-#{$var} {
         &:checked {
-          background-color: nth($alert-color, $i);
-          border-color: nth($alert-color, $i);
+          background-color: list.nth($alert-color, $i);
+          border-color: list.nth($alert-color, $i);
         }
       }
     }
   }
 
-
   .payment-second {
     .mega-icons {
       &.stroke-#{$var} {
-        stroke: nth($alert-color, $i);
+        stroke: list.nth($alert-color, $i);
       }
     }
   }
 
   .toast-#{$var} {
-    color: nth($alert-color, $i) !important;
+    color: list.nth($alert-color, $i) !important;
   }
 
   .list-group-horizontal {
-
     &-sm,
     &-md,
     &-lg,
@@ -267,11 +255,11 @@ $dark-color;
     &-xxl {
       .list-group-item {
         &.border-left-#{$var} {
-          border-left: 4px solid nth($alert-color, $i);
+          border-left: 4px solid list.nth($alert-color, $i);
 
           [dir="rtl"] & {
             border-left: unset;
-            border-right: 4px solid nth($alert-color, $i);
+            border-right: 4px solid list.nth($alert-color, $i);
           }
         }
       }
@@ -283,8 +271,8 @@ $dark-color;
     .btn-check {
       &.radio-light-#{$var} {
         &:focus {
-          +.btn {
-            box-shadow: 0 0 0 4px rgba(nth($alert-color, $i), 0.55);
+          + .btn {
+            box-shadow: 0 0 0 4px rgba(list.nth($alert-color, $i), 0.55);
           }
         }
       }
@@ -295,14 +283,14 @@ $dark-color;
   .fill-radios {
     .radio {
       &.radio-#{$var} {
-        input[type='radio']:checked {
-          &+label {
+        input[type="radio"]:checked {
+          & + label {
             &::before {
-              border: 10px dashed nth($alert-color, $i);
+              border: 10px dashed list.nth($alert-color, $i);
             }
 
             &::after {
-              background-color: nth($alert-color, $i);
+              background-color: list.nth($alert-color, $i);
             }
           }
         }
@@ -311,44 +299,43 @@ $dark-color;
   }
 
   .list-group {
-
-    .form-check-input:checked[type=checkbox],
-    [type=radio] {
+    .form-check-input:checked[type="checkbox"],
+    [type="radio"] {
       &.checkbox-#{$var} {
         background-color: unset;
-        border-color: nth($alert-color, $i);
+        border-color: list.nth($alert-color, $i);
         outline: 0;
         background-color: unset;
 
         &:focus,
         &:active,
         &.active {
-          border-color: nth($alert-color, $i);
+          border-color: list.nth($alert-color, $i);
           outline: 0;
-          background-color: nth($alert-color, $i);
+          background-color: list.nth($alert-color, $i);
         }
       }
     }
 
     .alert-#{$var}.light {
-      background-color: rgba(nth($alert-color, $i), 0.4);
-      border-color: rgba(nth($alert-color, $i), 0.7);
+      background-color: rgba(list.nth($alert-color, $i), 0.4);
+      border-color: rgba(list.nth($alert-color, $i), 0.7);
     }
 
     .alert-#{$var}.dark {
       .alert-link {
         color: $white;
 
-        @if($var =="light") {
+        @if ($var == "light") {
           color: $dark-color;
         }
       }
 
-      background-color: nth($alert-color, $i);
-      border-color: nth($alert-color, $i);
+      background-color: list.nth($alert-color, $i);
+      border-color: list.nth($alert-color, $i);
       color: $auth-bg-color;
 
-      @if($var =="light") {
+      @if ($var == "light") {
         color: $dark-color;
       }
     }
@@ -356,19 +343,23 @@ $dark-color;
     .alert-#{$var}.outline,
     .alert-#{$var}.outline-2x {
       background-color: $transparent-color;
-      border-color: nth($alert-color, $i);
-      color: nth($alert-color, $i);
+      border-color: list.nth($alert-color, $i);
+      color: list.nth($alert-color, $i);
 
       .btn-close {
         filter: unset;
       }
 
-      @if($var =="light") {
+      @if ($var == "light") {
         color: $dark-color;
       }
     }
 
     .alert-#{$var}.inverse {
+      background-color: transparent;
+      padding: 13px 20px 13px 65px;
+      border-color: list.nth($alert-color, $i);
+      color: $theme-body-font-color;
       &:before {
         top: 16px;
         content: "";
@@ -376,7 +367,7 @@ $dark-color;
         left: 54px;
         width: 0;
         height: 0;
-        border-left: 7px dashed nth($alert-color, $i);
+        border-left: 7px dashed list.nth($alert-color, $i);
         border-top: 7px dashed transparent;
         border-bottom: 7px dashed transparent;
 
@@ -385,15 +376,10 @@ $dark-color;
         }
       }
 
-      background-color: transparent;
-      padding: 13px 20px 13px 65px;
-      border-color: nth($alert-color, $i);
-      color: $theme-body-font-color;
-
       i {
         padding: 17px 20px;
         display: inline-block;
-        background-color: nth($alert-color, $i);
+        background-color: list.nth($alert-color, $i);
         color: $white;
         border-radius: 3px 0 0 3px;
         position: absolute;
@@ -419,7 +405,6 @@ $dark-color;
   padding: 11px 1.25rem;
 }
 
-
 .alert-icons {
   &.outline-2x {
     padding: 15px;
@@ -442,31 +427,18 @@ $dark-color;
   border-left: 4px solid $dark-color;
 }
 
-$alert-light-name: primary,
-  secondary,
-  success,
-  tertiary,
-  warning,
-  info,
-  light,
-  danger,
-  dark;
+$alert-light-name: primary, secondary, success, tertiary, warning, info, light,
+  danger, dark;
 
-$alert-light-color: $light-primary,
-  $light-secondary,
-  $light-success,
-  $light-tertiary,
-  $light-warning,
-  $light-info,
-  $light-white,
-  $light-danger,
+$alert-light-color: $light-primary, $light-secondary, $light-success,
+  $light-tertiary, $light-warning, $light-info, $light-white, $light-danger,
   $light-dark;
 
 @each $var in $alert-light-name {
-  $i: index($alert-light-name, $var);
+  $i: list.index($alert-light-name, $var);
 
   .alert-light-#{$var} {
-    background-color: nth($alert-light-color, $i);
+    background-color: list.nth($alert-light-color, $i);
   }
 }
 
@@ -481,18 +453,17 @@ $alert-light-color: $light-primary,
   i {
     margin-right: 0;
   }
-
 }
 
 .ellipsis.content {
-  @media (max-width:576px) {
+  @media (max-width: 576px) {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 294px;
   }
 
-  @media (max-width:575px) {
+  @media (max-width: 575px) {
     max-width: 180px;
   }
 }
@@ -501,7 +472,6 @@ $alert-light-color: $light-primary,
   display: flex;
   align-items: center;
   gap: 8px;
-
 }
 
 // flag-icons

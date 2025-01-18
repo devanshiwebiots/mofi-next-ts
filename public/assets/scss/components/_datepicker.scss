@@ -13,7 +13,6 @@
   fill: var(--theme-default);
 }
 
-
 .datepicker {
   z-index: 99;
 }
@@ -72,13 +71,13 @@
 }
 
 .clockpicker-canvas-bg {
-  fill: lighten($primary-color, 38%);
+  fill: color.adjust($primary-color, $lightness: 38%);
 }
 
 .clockpicker-tick {
   &:hover {
     color: inherit;
-    background-color: lighten($primary-color, 38%);
+    background-color: color.adjust($primary-color, $lightness: 38%);
   }
 }
 
@@ -105,7 +104,7 @@
       background-color: var(--theme-default);
       border: 1px dashed var(--theme-default);
 
-      +.fc-h-event {
+      + .fc-h-event {
         margin-top: 10px;
       }
 
@@ -147,7 +146,7 @@
 
     .fc-toolbar-chunk {
       .fc-button-group {
-        ~.fc-today-button {
+        ~ .fc-today-button {
           margin: 0 8px;
         }
       }
@@ -220,18 +219,17 @@
       }
     }
   }
-  .react-calendar{
-    .react-calendar__tile--active{
+  .react-calendar {
+    .react-calendar__tile--active {
       background: $primary-color !important;
     }
-    .react-calendar__tile--now{
+    .react-calendar__tile--now {
       background: rgba($primary-color, 0.3);
     }
   }
 }
 
 .flatpickr-day {
-
   &.selected,
   .endRange {
     background-color: var(--theme-default);
@@ -240,7 +238,6 @@
     &:hover {
       background-color: var(--theme-default);
       border-color: var(--theme-default);
-
     }
   }
 }
@@ -261,11 +258,9 @@
   font-size: calc(14px + (19 - 14) * ((100vw - 320px) / (1920 - 320)));
 }
 
-
 .flatpickr-calendar {
   &.animate {
-
-    @media (max-width:400px) {
+    @media (max-width: 400px) {
       width: 77%;
       left: 50% !important;
       transform: translateX(-50%);
@@ -286,19 +281,22 @@
 .flatpicker-calender {
   .rmdp-container {
     .ep-arrow {
-      &.rmdp-ep-arrow[direction=bottom]{
+      &.rmdp-ep-arrow[direction="bottom"] {
         border-top: unset !important;
       }
-    } 
+    }
   }
   .form-control {
-    @media (max-width:768px) {
+    @media (max-width: 768px) {
       font-size: 14px;
     }
   }
 }
 
-.input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+    .valid-feedback
+  ):not(.invalid-tooltip):not(.invalid-feedback) {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -311,7 +309,7 @@
       margin-bottom: 0;
     }
   }
-  .react-datepicker-wrapper{
+  .react-datepicker-wrapper {
     width: 100%;
   }
 }

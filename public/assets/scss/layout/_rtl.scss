@@ -10,7 +10,7 @@ html[dir="rtl"] {
     margin-left: unset !important;
     margin-right: auto !important;
   }
-  .timeline-calendar{
+  .timeline-calendar {
     direction: ltr;
   }
   .user-profile {
@@ -22,20 +22,20 @@ html[dir="rtl"] {
       }
     }
   }
-  .range-slider{
+  .range-slider {
     direction: ltr;
   }
-  .price-range > div{
+  .price-range > div {
     direction: ltr;
   }
   .footer-icon {
     margin-left: unset;
     margin-right: 2px;
   }
-  .bookmark-flip{
-    .filled-bookmark{
-      .ProfileCard-realName{
-        .pull-right{
+  .bookmark-flip {
+    .filled-bookmark {
+      .ProfileCard-realName {
+        .pull-right {
           margin-left: unset;
           margin-right: auto;
         }
@@ -76,7 +76,7 @@ html[dir="rtl"] {
 
   .color-box {
     button {
-      +button {
+      + button {
         margin-left: unset;
         margin-right: 5px;
       }
@@ -134,7 +134,7 @@ html[dir="rtl"] {
               .simplebar-mask {
                 .simplebar-content-wrapper {
                   .simplebar-content {
-                    >li .badge {
+                    > li .badge {
                       left: 50px !important;
                       right: unset !important;
                     }
@@ -156,8 +156,8 @@ html[dir="rtl"] {
               }
             }
 
-            ~.page-body,
-            ~footer {
+            ~ .page-body,
+            ~ footer {
               margin-left: 0;
               margin-right: 88px;
               transition: 0.5s;
@@ -169,7 +169,7 @@ html[dir="rtl"] {
                   .simplebar-mask {
                     .simplebar-content-wrapper {
                       .simplebar-content {
-                        >li {
+                        > li {
                           a {
                             svg {
                               margin-left: 0;
@@ -184,7 +184,7 @@ html[dir="rtl"] {
                 .sidebar-list {
                   .sidebar-title {
                     &.active {
-                      ~.sidebar-submenu {
+                      ~ .sidebar-submenu {
                         display: none !important;
                       }
                     }
@@ -204,7 +204,7 @@ html[dir="rtl"] {
                     .simplebar-mask {
                       .simplebar-content-wrapper {
                         .simplebar-content {
-                          >li {
+                          > li {
                             a {
                               svg {
                                 margin-left: 13px;
@@ -228,7 +228,7 @@ html[dir="rtl"] {
                 .sidebar-list {
                   .sidebar-title {
                     &.active {
-                      ~.sidebar-submenu {
+                      ~ .sidebar-submenu {
                         display: block !important;
                       }
                     }
@@ -239,7 +239,7 @@ html[dir="rtl"] {
                   .simplebar-mask {
                     .simplebar-content-wrapper {
                       .simplebar-content {
-                        >li {
+                        > li {
                           a {
                             svg {
                               float: none;
@@ -264,14 +264,14 @@ html[dir="rtl"] {
                 .simplebar-mask {
                   .simplebar-content-wrapper {
                     .simplebar-content {
-                      >li {
+                      > li {
                         .sidebar-submenu {
                           &:after {
                             right: 30px;
                             left: unset;
                           }
 
-                          >li {
+                          > li {
                             a {
                               padding-right: 62px !important;
                               padding-left: unset !important;
@@ -304,7 +304,7 @@ html[dir="rtl"] {
                 .simplebar-mask {
                   .simplebar-content-wrapper {
                     .simplebar-content {
-                      >li {
+                      > li {
                         a {
                           svg {
                             margin-right: unset;
@@ -341,8 +341,8 @@ html[dir="rtl"] {
 
   // task page css
   .date-details {
-    >div {
-      +div {
+    > div {
+      + div {
         margin-left: unset;
         margin-right: 10px;
       }
@@ -373,7 +373,7 @@ html[dir="rtl"] {
           padding-left: 20px;
 
           li {
-            >span {
+            > span {
               float: left;
             }
           }
@@ -384,7 +384,7 @@ html[dir="rtl"] {
         .flex-grow-1 {
           ul {
             li {
-              +li {
+              + li {
                 padding-left: unset;
                 padding-right: 10px;
                 margin-left: unset;
@@ -413,7 +413,7 @@ html[dir="rtl"] {
       margin-bottom: -12px;
 
       li {
-        &:nth-child(n+2) {
+        &:nth-child(n + 2) {
           margin-right: 0px;
           margin-left: unset;
           margin-bottom: 12px;
@@ -451,7 +451,6 @@ html[dir="rtl"] {
     }
   }
 
-
   .file-content {
     .form-inline {
       i {
@@ -478,7 +477,7 @@ html[dir="rtl"] {
   .customers {
     ul {
       li {
-        +li {
+        + li {
           margin-left: unset;
           margin-right: -10%;
         }
@@ -515,7 +514,7 @@ html[dir="rtl"] {
       .customers {
         ul {
           li {
-            +li {
+            + li {
               margin-left: unset;
               margin-right: -10px;
             }
@@ -564,8 +563,8 @@ html[dir="rtl"] {
   .page-header {
     .header-wrapper {
       .nav-right {
-        >ul {
-          >li {
+        > ul {
+          > li {
             &:first-child {
               margin-right: 0;
             }
@@ -657,7 +656,7 @@ html[dir="rtl"] {
         }
 
         div.sidebar-wrapper {
-          >div {
+          > div {
             text-align: right;
           }
 
@@ -666,9 +665,8 @@ html[dir="rtl"] {
               li {
                 a {
                   &.active {
-
-                    ~.sidebar-submenu,
-                    ~.mega-menu-container {
+                    ~ .sidebar-submenu,
+                    ~ .mega-menu-container {
                       animation: fadeInRight 1000ms ease-in-out;
                     }
                   }
@@ -689,8 +687,8 @@ html[dir="rtl"] {
                     }
                   }
 
-                  >li {
-                    >a {
+                  > li {
+                    > a {
                       &::after {
                         left: unset;
                         right: 20px;
@@ -742,8 +740,8 @@ html[dir="rtl"] {
           &.close_icon {
             transform: translateX(150px);
 
-            ~.page-body,
-            ~.footer {
+            ~ .page-body,
+            ~ .footer {
               margin-right: 0px;
             }
           }
@@ -761,7 +759,6 @@ html[dir="rtl"] {
           .sidebar-main {
             .sidebar-links {
               li {
-
                 .sidebar-submenu,
                 .mega-menu-container {
                   right: 90px;
@@ -798,7 +795,7 @@ html[dir="rtl"] {
 
         div.sidebar-wrapper {
           &.close_icon {
-            ~.page-body {
+            ~ .page-body {
               padding-right: 15px;
               margin: 0 auto !important;
             }
@@ -849,8 +846,8 @@ html[dir="rtl"] {
   .bookmark-wrap {
     .details-bookmark {
       .row {
-        >div {
-          +div {
+        > div {
+          + div {
             padding-left: 15px !important;
           }
         }
@@ -889,16 +886,17 @@ html[dir="rtl"] {
 
   // index page css end
   @each $progress-gradient-name,
-  $progress-gradient-color in (primary, var(--theme-default)),
-  (secondary, $secondary-color),
-  (success, $success-color),
-  (danger, $danger-color),
-  (info, $info-color),
-  (light, $light-color),
-  (dark, $dark-color),
-  (warning, $warning-color) {
+    $progress-gradient-color in (primary, var(--theme-default)),
+    (secondary, $secondary-color), (success, $success-color),
+    (danger, $danger-color), (info, $info-color), (light, $light-color),
+    (dark, $dark-color), (warning, $warning-color)
+  {
     .progress-gradient-#{$progress-gradient-name} {
-      background-image: linear-gradient(to right, $progress-gradient-color, $transparent-color);
+      background-image: linear-gradient(
+        to right,
+        $progress-gradient-color,
+        $transparent-color
+      );
 
       &::after {
         right: unset;
@@ -1041,14 +1039,11 @@ html[dir="rtl"] {
   }
 
   .order-box {
-
     .sub-total,
     .total,
     .qty {
-
       .shipping-class,
       li {
-
         .shopping-checkout-option,
         span {
           float: left;
@@ -1179,8 +1174,8 @@ html[dir="rtl"] {
 
   .product-filter {
     &.new-products {
-      .product-details{
-        &.text-start{
+      .product-details {
+        &.text-start {
           text-align: left !important;
         }
       }
@@ -1275,7 +1270,7 @@ html[dir="rtl"] {
   .bookmark {
     ul {
       li {
-        +li {
+        + li {
           margin-left: unset;
           margin-right: 10px;
         }
@@ -1341,7 +1336,7 @@ html[dir="rtl"] {
   }
 
   .badge {
-    +.badge {
+    + .badge {
       margin-right: 5px;
       margin-left: unset;
     }
@@ -1401,7 +1396,7 @@ html[dir="rtl"] {
   }
 
   .b-r-light {
-    border-left: 1px dashed $light-color  !important;
+    border-left: 1px dashed $light-color !important;
     border-right: unset !important;
   }
 
@@ -1443,9 +1438,8 @@ html[dir="rtl"] {
 
   .btn-group {
     > {
-
       .btn:not(:last-child):not(.dropdown-toggle),
-      :not(:last-child)>.btn {
+      :not(:last-child) > .btn {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
         border-top-right-radius: 0.25rem;
@@ -1464,15 +1458,14 @@ html[dir="rtl"] {
       }
     }
 
-    .btn-group> :not(:first-child)>.btn {
+    .btn-group > :not(:first-child) > .btn {
       border-top-left-radius: 0.25rem;
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
     }
 
-    .btn+ {
-
+    .btn + {
       .btn,
       .btn-group {
         margin-right: -1px;
@@ -1480,8 +1473,7 @@ html[dir="rtl"] {
       }
     }
 
-    .btn-group+ {
-
+    .btn-group + {
       .btn,
       .btn-group {
         margin-right: -1px;
@@ -1489,16 +1481,14 @@ html[dir="rtl"] {
     }
 
     .btn-group-vertical {
-      .btn+ {
-
+      .btn + {
         .btn,
         .btn-group {
           margin-right: -1px;
         }
       }
 
-      .btn-group+ {
-
+      .btn-group + {
         .btn,
         .btn-group {
           margin-right: -1px;
@@ -1528,7 +1518,7 @@ html[dir="rtl"] {
   }
 
   .b-l-light {
-    border-right: 1px dashed $light-color  !important;
+    border-right: 1px dashed $light-color !important;
     border-left: unset !important;
   }
 
@@ -1656,7 +1646,7 @@ html[dir="rtl"] {
 
   .modal-footer {
     > :not(:first-child) {
-      margin-right: .50rem;
+      margin-right: 0.5rem;
       margin-left: 0;
     }
   }
@@ -1671,7 +1661,7 @@ html[dir="rtl"] {
   }
 
   .breadcrumb-item {
-    &+.breadcrumb-item {
+    & + .breadcrumb-item {
       padding-right: 0.4rem;
       padding-left: unset;
 
@@ -1683,8 +1673,8 @@ html[dir="rtl"] {
     }
   }
 
-  code[class*=language-],
-  pre[class*=language-] {
+  code[class*="language-"],
+  pre[class*="language-"] {
     text-align: right;
   }
 
@@ -1693,15 +1683,19 @@ html[dir="rtl"] {
     margin-right: unset;
   }
 
-  .input-group:not(.has-validation)> :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
-  .input-group:not(.has-validation)>.dropdown-toggle:nth-last-child(n + 3) {
+  .input-group:not(.has-validation)
+    > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+  .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3) {
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
-  .input-group> :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
+      .valid-feedback
+    ):not(.invalid-tooltip):not(.invalid-feedback) {
     margin-left: unset;
     margin-right: -1px;
     border-top-left-radius: 0.25rem;
@@ -1719,31 +1713,37 @@ html[dir="rtl"] {
     padding-right: 12px;
   }
 
-  .input-group>.form-control:not(:last-child) {
+  .input-group > .form-control:not(:last-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  .input-group>.input-group-prepend>.btn,
-  .input-group>.input-group-prepend>.input-group-text,
-  .input-group>.input-group-append:not(:last-child)>.btn,
-  .input-group>.input-group-append:not(:last-child)>.input-group-text,
-  .input-group>.input-group-append:last-child>.btn:not(:last-child):not(.dropdown-toggle),
-  .input-group>.input-group-append:last-child>.input-group-text:not(:last-child) {
+  .input-group > .input-group-prepend > .btn,
+  .input-group > .input-group-prepend > .input-group-text,
+  .input-group > .input-group-append:not(:last-child) > .btn,
+  .input-group > .input-group-append:not(:last-child) > .input-group-text,
+  .input-group
+    > .input-group-append:last-child
+    > .btn:not(:last-child):not(.dropdown-toggle),
+  .input-group
+    > .input-group-append:last-child
+    > .input-group-text:not(:last-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0.25rem;
     border-bottom-right-radius: 0.25rem;
   }
 
-  .input-group>.input-group-append>.btn,
-  .input-group>.input-group-append>.input-group-text,
-  .input-group>.input-group-prepend:not(:first-child)>.btn,
-  .input-group>.input-group-prepend:not(:first-child)>.input-group-text,
-  .input-group>.input-group-prepend:first-child>.btn:not(:first-child),
-  .input-group>.input-group-prepend:first-child>.input-group-text:not(:first-child) {
+  .input-group > .input-group-append > .btn,
+  .input-group > .input-group-append > .input-group-text,
+  .input-group > .input-group-prepend:not(:first-child) > .btn,
+  .input-group > .input-group-prepend:not(:first-child) > .input-group-text,
+  .input-group > .input-group-prepend:first-child > .btn:not(:first-child),
+  .input-group
+    > .input-group-prepend:first-child
+    > .input-group-text:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-top-right-radius: 0;
@@ -2145,9 +2145,8 @@ html[dir="rtl"] {
 
   .needs-validation,
   .form-row {
-
-    .input-group>.form-control:not(:last-child),
-    .input-group>.custom-select:not(:last-child) {
+    .input-group > .form-control:not(:last-child),
+    .input-group > .custom-select:not(:last-child) {
       border-top-left-radius: 0.25rem;
       border-bottom-left-radius: 0.25rem;
       border-top-right-radius: 0;
@@ -2183,7 +2182,6 @@ html[dir="rtl"] {
       }
 
       &.style-1 {
-
         button[aria-expanded="true"],
         button[aria-expanded="false"] {
           &:before {
@@ -2204,7 +2202,7 @@ html[dir="rtl"] {
       }
 
       .col-xl-3 {
-        +.col-xl-3 {
+        + .col-xl-3 {
           padding-left: 0;
           padding-right: 15px;
         }
@@ -2213,7 +2211,7 @@ html[dir="rtl"] {
 
     .email-app-sidebar {
       .main-menu {
-        &>li {
+        & > li {
           text-align: right;
 
           a {
@@ -2280,8 +2278,8 @@ html[dir="rtl"] {
           float: left;
         }
 
-        &>* {
-          &>* {
+        & > * {
+          & > * {
             margin-left: 0;
           }
         }
@@ -2373,7 +2371,7 @@ html[dir="rtl"] {
   }
 
   .options {
-    >div {
+    > div {
       margin: 0 0 8px 8px;
     }
   }
@@ -2402,7 +2400,6 @@ html[dir="rtl"] {
 
           .input-group {
             .input-group-prepend {
-
               .btn,
               .input-group-text {
                 border-top-left-radius: 0;
@@ -2454,7 +2451,6 @@ html[dir="rtl"] {
       .form-group {
         .input-group {
           .input-group-prepend {
-
             .btn,
             .input-group-text {
               border-top-left-radius: 0;
@@ -2493,8 +2489,8 @@ html[dir="rtl"] {
         .theme-form {
           .ui-draggable {
             .input-group {
-              >.input-group-prepend {
-                >.input-group-text {
+              > .input-group-prepend {
+                > .input-group-text {
                   border-top-left-radius: 0;
                   border-bottom-left-radius: 0;
                   border-top-right-radius: 0.25rem;
@@ -2509,7 +2505,6 @@ html[dir="rtl"] {
 
     #pills-tabContent {
       .theme-form {
-
         .form-group,
         .ui-draggable {
           .input-group {
@@ -2542,7 +2537,6 @@ html[dir="rtl"] {
 
                 .input-group {
                   .input-group-prepend {
-
                     .btn,
                     .input-group-text {
                       border-top-left-radius: 0;
@@ -2585,7 +2579,7 @@ html[dir="rtl"] {
   .page-wrapper {
     .page-body-wrapper {
       .logo-wrapper {
-        box-shadow: 9px 0 20px rgba($semi-dark , 0.1) !important;
+        box-shadow: 9px 0 20px rgba($semi-dark, 0.1) !important;
 
         a {
           transform: translate(-64px);
@@ -2648,7 +2642,7 @@ html[dir="rtl"] {
       right: unset;
     }
 
-    &>span {
+    & > span {
       margin-right: 10px;
     }
   }
@@ -2675,7 +2669,7 @@ html[dir="rtl"] {
 
   // form builder-2 page
   .form-builder-2-header {
-    >div {
+    > div {
       nav {
         float: left;
       }
@@ -2695,7 +2689,10 @@ html[dir="rtl"] {
     }
   }
 
-  .input-group.has-validation> :nth-last-child(n+3):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  .input-group.has-validation
+    > :nth-last-child(n + 3):not(.dropdown-toggle):not(.dropdown-menu):not(
+      .form-floating
+    ) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
@@ -2767,11 +2764,11 @@ html[dir="rtl"] {
 
         div.sidebar-wrapper {
           &.close_icon {
-            ~.page-body {
+            ~ .page-body {
               margin-right: 0px;
             }
 
-            ~footer {
+            ~ footer {
               margin-right: 0;
             }
           }
@@ -2790,7 +2787,7 @@ html[dir="rtl"] {
           right: unset;
           left: 0;
 
-          @media (max-width:575.98px) {
+          @media (max-width: 575.98px) {
             left: 12px;
           }
         }
@@ -2808,8 +2805,8 @@ html[dir="rtl"] {
           }
         }
 
-        >ul {
-          >li {
+        > ul {
+          > li {
             .lang-txt {
               margin-left: 0;
               margin-right: 8px;
@@ -2927,7 +2924,7 @@ html[dir="rtl"] {
   .card-body {
     .alert {
       svg {
-        ~p {
+        ~ p {
           padding-left: unset;
           padding-right: 20px;
         }
@@ -2952,11 +2949,11 @@ html[dir="rtl"] {
   }
 
   @each $var in $alert-name {
-    $i: index($alert-name, $var);
+    $i: list.index($alert-name, $var);
 
     .alert-#{$var}.inverse {
       &:before {
-        border-right: 7px dashed nth($alert-color, $i);
+        border-right: 7px dashed list.nth($alert-color, $i);
         right: 54px;
         left: unset;
         border-left: unset;
@@ -3002,7 +2999,7 @@ html[dir="rtl"] {
             padding-right: unset;
           }
 
-          &+li {
+          & + li {
             margin-right: 30px;
             margin-left: unset;
             padding-left: 0;
@@ -3252,8 +3249,8 @@ html[dir="rtl"] {
   // social app page
   .custom-card {
     .card-footer {
-      &>div {
-        &+div {
+      & > div {
+        & + div {
           border-right: 1px dashed $light-semi-gray;
           border-left: unset !important;
         }
@@ -3313,7 +3310,6 @@ html[dir="rtl"] {
     table {
       &.dataTable {
         tbody {
-
           td,
           th {
             &.select-checkbox {
@@ -3342,8 +3338,8 @@ html[dir="rtl"] {
   table {
     &.dataTable {
       thead {
-        &>tr {
-          &>th {
+        & > tr {
+          & > th {
             padding-left: 30px;
             padding-right: 12px;
 
@@ -3378,16 +3374,16 @@ html[dir="rtl"] {
 
   div {
     &.table-responsive {
-      &>div {
+      & > div {
         &.dataTables_wrapper {
-          &>div {
+          & > div {
             &.row {
-              &>div[class^="col-"]:first-child {
+              & > div[class^="col-"]:first-child {
                 padding-right: 0;
                 padding-left: 0;
               }
 
-              &>div[class^="col-"]:last-child {
+              & > div[class^="col-"]:last-child {
                 padding-right: 0;
                 padding-left: 0;
               }
@@ -3603,8 +3599,8 @@ html[dir="rtl"] {
         }
 
         &:first-child {
-          border-top-right-radius: .25rem;
-          border-bottom-right-radius: .25rem;
+          border-top-right-radius: 0.25rem;
+          border-bottom-right-radius: 0.25rem;
           border-top-left-radius: 0;
           border-bottom-left-radius: 0;
         }
@@ -3631,8 +3627,8 @@ html[dir="rtl"] {
   }
 
   .btn-group {
-    >.btn:not(:last-child):not(.dropdown-toggle) {
-      >.btn-group:not(:last-child)>.btn {
+    > .btn:not(:last-child):not(.dropdown-toggle) {
+      > .btn-group:not(:last-child) > .btn {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
       }
@@ -3640,7 +3636,7 @@ html[dir="rtl"] {
   }
 
   .jsgrid-button {
-    +.jsgrid-button {
+    + .jsgrid-button {
       margin-right: 5px;
       margin-left: unset;
     }
@@ -3834,7 +3830,7 @@ html[dir="rtl"] {
         padding-right: 0;
 
         li {
-          &+li {
+          & + li {
             border-right: 1px dashed #a5afc6;
             border-left: unset;
             padding-right: 8px;
@@ -3905,7 +3901,7 @@ html[dir="rtl"] {
     right: 20px;
     left: unset;
 
-    &~.u-step-desc {
+    & ~ .u-step-desc {
       margin-right: 50px;
     }
   }
@@ -3924,7 +3920,7 @@ html[dir="rtl"] {
 
   .u-step-icon {
     float: right;
-    margin-left: .5em;
+    margin-left: 0.5em;
     margin-right: unset;
   }
 
@@ -4033,7 +4029,8 @@ html[dir="rtl"] {
   .flag-icons {
     div {
       .flex-grow-1 {
-        h5 {}
+        h5 {
+        }
       }
     }
   }
@@ -4159,7 +4156,7 @@ html[dir="rtl"] {
     padding-left: unset;
     float: right;
   }
-  
+
   // chart widget page
   .chart-widget-top {
     .text-end {
@@ -4174,7 +4171,6 @@ html[dir="rtl"] {
   }
 
   .horizontal-list-wrapper {
-
     .list-group-horizontal-sm,
     .list-group-horizontal-md,
     .list-group-horizontal-lg,
@@ -4222,7 +4218,6 @@ html[dir="rtl"] {
 
   // dashboard project page
   .chart-vertical-center {
-
     #myDoughnutGraph,
     #myPolarGraph {
       width: auto !important;
@@ -4233,7 +4228,7 @@ html[dir="rtl"] {
     ul {
       &.dates {
         li {
-          +li {
+          + li {
             border-right: 1px dashed #ddd;
             padding-right: 10px;
             margin-right: 5px;
@@ -4259,7 +4254,6 @@ html[dir="rtl"] {
   // dropzone page
   .dropzone {
     .dz-preview {
-
       .dz-error-mark,
       .dz-success-mark {
         right: 50%;
@@ -4320,7 +4314,7 @@ html[dir="rtl"] {
   // popover page
   .popover.top,
   .popover.bottom {
-    >.arrow:after {
+    > .arrow:after {
       margin-right: -10px;
       margin-left: unset;
     }
@@ -4328,10 +4322,9 @@ html[dir="rtl"] {
 
   // touchspin page
   .bootstrap-touchspin {
-    >.input-group-append {
-
-      >.btn,
-      >.input-group-text {
+    > .input-group-append {
+      > .btn,
+      > .input-group-text {
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
         border-top-left-radius: 0 !important;
@@ -4339,8 +4332,8 @@ html[dir="rtl"] {
       }
     }
 
-    >.form-control,
-    >.custom-select {
+    > .form-control,
+    > .custom-select {
       &:not(:last-child) {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
@@ -4386,7 +4379,7 @@ html[dir="rtl"] {
     right: unset;
     left: 0;
 
-    >.nav {
+    > .nav {
       padding-right: 10px;
     }
 
@@ -4396,7 +4389,7 @@ html[dir="rtl"] {
         left: unset;
         border-width: 5px 5px 5px 0;
         border-left-color: unset;
-        border-right-color: lighten($primary-color, 25%);
+        border-right-color: color.adjust($primary-color, $lightness: 25%);
       }
 
       span {
@@ -4459,7 +4452,7 @@ html[dir="rtl"] {
 
           .sidebar-wrapper {
             &.close_icon {
-              ~footer {
+              ~ footer {
                 width: 1280px;
                 padding-left: 0;
                 left: 50%;
@@ -4485,8 +4478,8 @@ html[dir="rtl"] {
   body.dark-only {
     .custom-card {
       .card-footer {
-        >div {
-          +div {
+        > div {
+          + div {
             border-right: 1px dashed $dark-card-border;
           }
         }
@@ -4520,7 +4513,7 @@ html[dir="rtl"] {
             .b-r-light,
             .border-right {
               border-right: none !important;
-              border-left: 1px dashed $dark-card-border  !important;
+              border-left: 1px dashed $dark-card-border !important;
             }
           }
         }
@@ -4530,7 +4523,6 @@ html[dir="rtl"] {
 
   // responsive css
   @media screen and (max-width: 1660px) {
-
     // video chat page
     .caller-img {
       left: unset;
@@ -4605,7 +4597,6 @@ html[dir="rtl"] {
     .pixelstrap {
       ul {
         a {
-
           &:hover,
           &:focus,
           &:active,
@@ -4620,8 +4611,14 @@ html[dir="rtl"] {
     }
   }
   @media (min-width: 1170px) {
-    .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content, 
-    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content {
+    .vertical-timeline--two-columns
+      .vertical-timeline-element.vertical-timeline-element--right
+      .vertical-timeline-element-content,
+    .vertical-timeline--two-columns
+      .vertical-timeline-element:nth-child(even):not(
+        .vertical-timeline-element--left
+      )
+      .vertical-timeline-element-content {
       float: left;
     }
     .vertical-timeline-element-content {
@@ -4630,18 +4627,34 @@ html[dir="rtl"] {
         border-left: 7px solid $light-color;
       }
     }
-    .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content-arrow, 
-    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content-arrow {
+    .vertical-timeline--two-columns
+      .vertical-timeline-element.vertical-timeline-element--right
+      .vertical-timeline-element-content-arrow,
+    .vertical-timeline--two-columns
+      .vertical-timeline-element:nth-child(even):not(
+        .vertical-timeline-element--left
+      )
+      .vertical-timeline-element-content-arrow {
       right: auto;
       left: 100%;
     }
-    .vertical-timeline--two-columns .vertical-timeline-element.vertical-timeline-element--right .vertical-timeline-element-content .vertical-timeline-element-date, 
-    .vertical-timeline--two-columns .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left) .vertical-timeline-element-content .vertical-timeline-element-date {
+    .vertical-timeline--two-columns
+      .vertical-timeline-element.vertical-timeline-element--right
+      .vertical-timeline-element-content
+      .vertical-timeline-element-date,
+    .vertical-timeline--two-columns
+      .vertical-timeline-element:nth-child(even):not(
+        .vertical-timeline-element--left
+      )
+      .vertical-timeline-element-content
+      .vertical-timeline-element-date {
       right: auto;
       left: 124%;
       text-align: left;
     }
-    .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    .vertical-timeline--two-columns
+      .vertical-timeline-element-content
+      .vertical-timeline-element-date {
       right: 124%;
       left: unset;
     }
@@ -4653,18 +4666,18 @@ html[dir="rtl"] {
     }
   }
   @media only screen and (max-width: 1169px) {
-    .vertical-timeline::before{
+    .vertical-timeline::before {
       left: unset;
       right: 18px;
     }
-    .vertical-timeline-element-content{
+    .vertical-timeline-element-content {
       margin-left: unset;
       margin-right: 45px;
     }
-    .cd-timeline-img{
+    .cd-timeline-img {
       left: unset;
       right: 4px;
-      i{
+      i {
         right: 58%;
       }
     }
@@ -4677,7 +4690,7 @@ html[dir="rtl"] {
       }
     }
 
-    .link-section>div>h6:before {
+    .link-section > div > h6:before {
       right: unset;
       left: 10px;
     }
@@ -4686,7 +4699,7 @@ html[dir="rtl"] {
       .page-header {
         .header-wrapper {
           .nav-right {
-            >ul {
+            > ul {
               li {
                 .submenu {
                   li {
@@ -4720,7 +4733,7 @@ html[dir="rtl"] {
         }
 
         .col-xl-3 {
-          +.col-xl-3 {
+          + .col-xl-3 {
             padding-left: 15px;
           }
         }
@@ -4728,7 +4741,7 @@ html[dir="rtl"] {
 
       .email-app-sidebar {
         .main-menu {
-          &>li {
+          & > li {
             text-align: right;
 
             a {
@@ -4876,7 +4889,6 @@ html[dir="rtl"] {
     }
 
     .page-body-wrapper {
-
       .page-body,
       footer {
         margin-right: 0 !important;
@@ -5117,7 +5129,7 @@ html[dir="rtl"] {
       .page-header {
         .header-wrapper {
           .nav-right {
-            >ul {
+            > ul {
               li {
                 margin-right: unset;
                 margin-left: 1px;
@@ -5166,8 +5178,8 @@ html[dir="rtl"] {
     .page-header {
       .header-wrapper {
         .nav-right {
-          >ul {
-            >li {
+          > ul {
+            > li {
               &:last-child {
                 padding-right: 10px;
               }
@@ -5272,7 +5284,6 @@ html[dir="rtl"] {
             .sidebar-main {
               .sidebar-links {
                 li {
-
                   .sidebar-submenu,
                   .mega-menu-container {
                     right: 112px;
@@ -5290,7 +5301,6 @@ html[dir="rtl"] {
             .sidebar-main {
               .sidebar-links {
                 li {
-
                   .sidebar-submenu,
                   .mega-menu-container {
                     right: 80px;
@@ -5341,7 +5351,7 @@ html[dir="rtl"] {
             .simplebar-mask {
               .simplebar-content-wrapper {
                 .simplebar-content {
-                  >li {
+                  > li {
                     margin-left: 8px;
                     margin-right: unset;
                   }

@@ -11,16 +11,17 @@
 .my-gallery {
   &.gallery-with-description {
     img {
-      border: $card-border-color  !important;
+      border: $card-border-color !important;
       border-bottom: none !important;
     }
-    h4{
+    h4 {
       margin-top: 0px;
     }
   }
 }
 
-element.style {}
+element.style {
+}
 
 .my-gallery img {
   width: 100%;
@@ -33,7 +34,7 @@ element.style {}
 .gallery {
   margin-bottom: -30px;
 
-  >a {
+  > a {
     margin-bottom: 30px;
 
     &:before {
@@ -71,9 +72,9 @@ element.style {}
   margin-bottom: -30px;
 
   a {
-    >div {
+    > div {
       padding: 10px;
-      border: 1px dashed lighten($dark-color , 70%);
+      border: 1px dashed color.adjust($dark-color, $lightness: 70%);
       margin-bottom: 30px;
       border-radius: 0 0 5px 5px;
     }
@@ -90,7 +91,7 @@ element.style {}
   }
 
   p {
-    color: lighten($dark-gray , 10%);
+    color: color.adjust($dark-gray, $lightness: 10%);
   }
 }
 
@@ -100,7 +101,6 @@ element.style {}
 
 .lg-outer {
   .lg-actions {
-
     .lg-next,
     .lg-prev {
       background-color: rgb(255, 255, 255);
@@ -156,7 +156,6 @@ element.style {}
 
 .gallery {
   a {
-
     &:before,
     &:after {
       content: none;
@@ -164,7 +163,7 @@ element.style {}
   }
 
   .img-hover {
-    >div {
+    > div {
       overflow: hidden;
     }
   }
@@ -173,8 +172,8 @@ element.style {}
     img {
       -webkit-transform: scale(1);
       transform: scale(1);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
 
       &:hover {
         -webkit-transform: scale(1.2);
@@ -187,8 +186,8 @@ element.style {}
     img {
       width: 100%;
       height: auto;
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
       transform: translateX(0px);
     }
 
@@ -203,8 +202,8 @@ element.style {}
     img {
       -webkit-transform: scale(1.2);
       transform: scale(1.2);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -219,8 +218,8 @@ element.style {}
     img {
       -webkit-transform: scale(1.5);
       transform: scale(1.5);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -236,8 +235,8 @@ element.style {}
       margin-left: 30px;
       -webkit-transform: scale(1.3);
       transform: scale(1.3);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -251,8 +250,8 @@ element.style {}
     img {
       -webkit-transform: rotate(15deg) scale(1.4);
       transform: rotate(15deg) scale(1.4);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -267,8 +266,8 @@ element.style {}
     img {
       -webkit-filter: blur(3px);
       filter: blur(3px);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -283,8 +282,8 @@ element.style {}
     img {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -299,8 +298,8 @@ element.style {}
     img {
       -webkit-filter: sepia(100%);
       filter: sepia(100%);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -315,8 +314,8 @@ element.style {}
     img {
       -webkit-filter: grayscale(0) blur(0);
       filter: grayscale(0) blur(0);
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
@@ -330,20 +329,20 @@ element.style {}
   .hover-11 {
     img {
       opacity: 1;
-      -webkit-transition: .3s ease-in-out;
-      transition: .3s ease-in-out;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
     }
 
     &:hover {
       img {
-        opacity: .5;
+        opacity: 0.5;
       }
     }
   }
 
   @-webkit-keyframes flash {
     0% {
-      opacity: .4;
+      opacity: 0.4;
     }
 
     100% {
@@ -353,7 +352,7 @@ element.style {}
 
   @keyframes flash {
     0% {
-      opacity: .4;
+      opacity: 0.4;
     }
 
     100% {
@@ -384,7 +383,6 @@ element.style {}
   }
 
   .hover-14 {
-
     div {
       position: relative;
 
@@ -394,20 +392,27 @@ element.style {}
         left: -75%;
         z-index: 2;
         display: block;
-        content: '';
+        content: "";
         width: 50%;
         height: 100%;
-        background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
-        background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+        background: -webkit-linear-gradient(
+          left,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.3) 100%
+        );
+        background: linear-gradient(
+          to right,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.3) 100%
+        );
         -webkit-transform: skewX(-25deg);
         transform: skewX(-25deg);
       }
 
       &:hover {
         &:before {
-          -webkit-animation: shine .75s;
-          animation: shine .75s;
-
+          -webkit-animation: shine 0.75s;
+          animation: shine 0.75s;
         }
       }
     }
@@ -423,10 +428,10 @@ element.style {}
         left: 50%;
         z-index: 2;
         display: block;
-        content: '';
+        content: "";
         width: 0;
         height: 0;
-        background: rgba(255, 255, 255, .2);
+        background: rgba(255, 255, 255, 0.2);
         border-radius: 100%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -435,8 +440,8 @@ element.style {}
 
       &:hover {
         &:before {
-          -webkit-animation: circle .75s;
-          animation: circle .75s;
+          -webkit-animation: circle 0.75s;
+          animation: circle 0.75s;
         }
       }
     }
@@ -490,7 +495,7 @@ element.style {}
 
 /* clear fix */
 .grid:after {
-  content: '';
+  content: "";
   display: block;
   clear: both;
 }
