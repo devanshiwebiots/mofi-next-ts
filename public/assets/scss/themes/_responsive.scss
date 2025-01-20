@@ -5808,7 +5808,7 @@
     $danger-color, $warning-color, $info-color, $light-color, $dark-color;
 
   @each $var in $alert-name {
-    $i: list.index($alert-name, $var);
+    $i: index($alert-name, $var);
 
     .alert-#{$var}.inverse {
       background-color: transparent;
